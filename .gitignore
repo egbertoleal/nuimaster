@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/DotNetAuxSolution/.vs/DotNetAuxSolution/v16
+/DotNetAuxSolution/AuxProject/bin/Debug
+/DotNetAuxSolution/AuxProject/obj/Debug
+/DotNetAuxSolution/CLustering/bin/Debug
+/DotNetAuxSolution/CLustering/obj/Debug
+/DotNetAuxSolution/packages
+/DotNetAuxSolution/Thesis.Processing/bin/Debug
+/DotNetAuxSolution/Thesis.Processing/obj/Debug
