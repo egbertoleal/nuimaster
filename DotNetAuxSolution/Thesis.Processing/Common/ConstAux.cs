@@ -6,6 +6,7 @@
         public const string DOT_NET_PRE_PROCESSING_FILE_FULL_PATH = @"D:\FilesThesis\2 - PreProcessed\02-DotNetPreProcessedInput.csv";
         public const string JAVA_TEST_PROJECT_PRE_PROCESSING_FILE_FULL_PATH = @"D:\FilesThesis\2 - PreProcessed\01-PreProcessedInput.csv";
         public const string FIREBASE_PRE_PROCESSING_FILE_FULL_PATH = @"D:\FilesThesis\2 - PreProcessed\firebase\01-PreProcessedInput.csv";
+        public const string APACHE_PRE_PROCESSING_FILE_FULL_PATH = @"D:\FilesThesis\2 - PreProcessed\apache\01-PreProcessedInput.csv";
         public const int METRICS_FILE_INITIAL_INDEX_FEATURES = 2;
         public const int METRICS_FILE_FINAL_INDEX_FEATURES = 6;
         public const int METRICS_FILE_TEST_CLASS_NAME_INDEX = 0;
@@ -17,6 +18,7 @@
 
         public const string REQ_COVER_FILE_FULL_PATH = @"D:\FilesThesis\1- ReqCover\03-UniqueCoverFile.csv";
         public const string FIREBASE_REQ_COVER_FILE_FULL_PATH = @"D:\FilesThesis\1- ReqCover\firebase\03-UniqueCoverFile.csv";
+        public const string APACHE_REQ_COVER_FILE_FULL_PATH = @"D:\FilesThesis\1- ReqCover\apache\03-UniqueCoverFile.csv";
         public const int REQ_COVER_CLASS_NAME_INDEX = 4;
         public const int REQ_COVER_METHOD_NAME_INDEX = 5;
         public const int REQ_COVER_TEST_CASE_INDEX = 3;
@@ -46,6 +48,7 @@
 
         public const string PROJECT_NAME_JAVA_TEST = "JavaTest";
         public const string PROJECT_NAME_FIREBASE = "Firebase";
+        public const string PROJECT_NAME_APACHE = "Apache";
 
         #endregion
 

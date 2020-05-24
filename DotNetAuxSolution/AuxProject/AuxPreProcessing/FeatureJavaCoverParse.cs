@@ -8,7 +8,7 @@ namespace AuxProject.AuxPreProcessing
     [TestClass]
     public class FeatureJavaCoverParse
     {
-        private string SRC_JAVA_DIR = @"D:\Github\nui\wseclipse\apache-commons-math\src\main\java";
+        private string SRC_JAVA_DIR = @"D:\Github\nui\wseclipse\commons-dbutils\src\main\java";
         private string REQ_FILE = @"D:\FilesThesis\1- ReqCover\apache\01-ReqFile.csv";
         private int ReqCounter = 0;
 

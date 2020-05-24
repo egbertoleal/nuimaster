@@ -22,6 +22,12 @@ namespace AuxProject.AuxPreProcessing
             GeneratePreProcessingFile(ConstAux.FIREBASE_PRE_PROCESSING_FILE_FULL_PATH, ConstAux.FIREBASE_REQ_COVER_FILE_FULL_PATH);
         }
 
+        [TestMethod]
+        public void GeneratePreProcessingFileApache()
+        {
+            GeneratePreProcessingFile(ConstAux.APACHE_PRE_PROCESSING_FILE_FULL_PATH, ConstAux.APACHE_REQ_COVER_FILE_FULL_PATH);
+        }
+
         public void GeneratePreProcessingFile(string metricsFileFullPath, string coverFileFullPath)
         {
             var metricFile = new FileSheet(metricsFileFullPath);

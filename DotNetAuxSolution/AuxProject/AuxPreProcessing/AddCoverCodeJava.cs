@@ -9,7 +9,7 @@ namespace AuxProject.AuxPreProcessing
     [TestClass]
     public class AddCoverCodeJava
     {
-        private string SRC_JAVA_DIR = @"D:\Github\nui\wseclipse\apache-commons-math\src\main\java";
+        private string SRC_JAVA_DIR = @"D:\Github\nui\wseclipse\commons-dbutils\src\main\java";
         private string CODIGO_LOG = "LogCode.LogCoverageCode.PrintCode();";
 
         [TestMethod]

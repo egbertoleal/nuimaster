@@ -57,6 +57,26 @@ namespace AuxProject.ClusteringTests
             RunKMedoidsOOMetricsTest(numClusters, ConstAux.FIREBASE_PRE_PROCESSING_FILE_FULL_PATH, ConstAux.PROJECT_NAME_FIREBASE);
         }
 
+        [TestMethod]
+        [DataRow(2)]
+        [DataRow(3)]
+        [DataRow(4)]
+        [DataRow(5)]
+        [DataRow(6)]
+        [DataRow(7)]
+        [DataRow(8)]
+        [DataRow(9)]
+        [DataRow(10)]
+        [DataRow(11)]
+        [DataRow(12)]
+        [DataRow(13)]
+        [DataRow(14)]
+        [DataRow(15)]
+        public void RunKMedoidsOnApacheProject(int numClusters)
+        {
+            RunKMedoidsOOMetricsTest(numClusters, ConstAux.APACHE_PRE_PROCESSING_FILE_FULL_PATH, ConstAux.PROJECT_NAME_APACHE);
+        }
+
 
         [TestMethod]
         public void RunMedoidsFindBestKForJavaTest()
@@ -68,6 +88,12 @@ namespace AuxProject.ClusteringTests
         public void RunMedoidsFindBestKForFirebaseProject()
         {
             RunMedoidsFindBestK(ConstAux.FIREBASE_PRE_PROCESSING_FILE_FULL_PATH, ConstAux.PROJECT_NAME_FIREBASE);
+        }
+
+        [TestMethod]
+        public void RunMedoidsFindBestKForApacheProject()
+        {
+            RunMedoidsFindBestK(ConstAux.APACHE_PRE_PROCESSING_FILE_FULL_PATH, ConstAux.PROJECT_NAME_APACHE);
         }
 
         #endregion
