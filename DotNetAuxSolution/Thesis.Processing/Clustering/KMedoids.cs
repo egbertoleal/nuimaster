@@ -41,9 +41,8 @@ namespace Thesis.Processing.Clustering
         public int Cluster()
         {
             int[] currentCentroids = InitMedoids();            
-            int[] currentClusterLabel;
-            double[] currentDistanceToCentroid;
-            AssignToCluster(currentCentroids, out currentDistanceToCentroid, out currentClusterLabel);
+            int[] currentClusterLabel = new int[NumRows]; 
+            double[] currentDistanceToCentroid = new double[NumRows];
 
             bool changed = true;
             int counter = 0;
@@ -55,6 +54,8 @@ namespace Thesis.Processing.Clustering
                 changed = false;
                 counter++;
 
+                AssignToCluster(currentCentroids, out currentDistanceToCentroid, out currentClusterLabel);
+
                 for (int indexCluster = 0; indexCluster < NumClusters; indexCluster++)
                 {
                     newBestCentroid = GetBestCentroid(currentCentroids, currentClusterLabel, indexCluster);
@@ -65,8 +66,6 @@ namespace Thesis.Processing.Clustering
                         totalChanges++;
                     }                    
                 }
-
-                AssignToCluster(currentCentroids, out currentDistanceToCentroid, out currentClusterLabel);
             }
 
             Clustering = currentClusterLabel;
