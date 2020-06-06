@@ -1,5 +1,4 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Thesis.Processing.Clustering;
 using Thesis.Processing.Common;
@@ -27,11 +26,6 @@ namespace AuxProject.ClusteringTests
         [DataRow(8)]
         [DataRow(9)]
         [DataRow(10)]
-        [DataRow(11)]
-        [DataRow(12)]
-        [DataRow(13)]
-        [DataRow(14)]
-        [DataRow(15)]
         public void RunKMeansOnJavaTestProject(int numClusters)
         {
             RunKMeansOOMetricsTest(numClusters, ConstAux.JAVA_TEST_PROJECT_PRE_PROCESSING_FILE_FULL_PATH, ConstAux.PROJECT_NAME_JAVA_TEST);
@@ -48,11 +42,6 @@ namespace AuxProject.ClusteringTests
         [DataRow(8)]
         [DataRow(9)]
         [DataRow(10)]
-        [DataRow(11)]
-        [DataRow(12)]
-        [DataRow(13)]
-        [DataRow(14)]
-        [DataRow(15)]
         public void RunKMeansOnFirebaseProject(int numClusters)
         {
             RunKMeansOOMetricsTest(numClusters, ConstAux.FIREBASE_PRE_PROCESSING_FILE_FULL_PATH, ConstAux.PROJECT_NAME_FIREBASE);
@@ -68,11 +57,6 @@ namespace AuxProject.ClusteringTests
         [DataRow(8)]
         [DataRow(9)]
         [DataRow(10)]
-        [DataRow(11)]
-        [DataRow(12)]
-        [DataRow(13)]
-        [DataRow(14)]
-        [DataRow(15)]
         public void RunKMeansOnApacheProject(int numClusters)
         {
             RunKMeansOOMetricsTest(numClusters, ConstAux.APACHE_PRE_PROCESSING_FILE_FULL_PATH, ConstAux.PROJECT_NAME_APACHE);
@@ -131,7 +115,7 @@ namespace AuxProject.ClusteringTests
 
             double[][] rawData = inputContent.GetDoubleMatrix(ConstAux.METRICS_FILE_INITIAL_INDEX_FEATURES, ConstAux.METRICS_FILE_FINAL_INDEX_FEATURES);
 
-            for (int numClusters = 1; numClusters < 30; numClusters++)
+            for (int numClusters = 2; numClusters < 10; numClusters++)
             {
                 KMeans clusterAlg = new KMeans(rawData, numClusters, MAX_NUMBER_ITERATION);
                 clusterAlg.Cluster();

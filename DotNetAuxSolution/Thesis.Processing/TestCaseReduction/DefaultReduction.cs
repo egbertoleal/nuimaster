@@ -60,13 +60,13 @@ namespace Thesis.Processing.TestCaseReduction
 
             var finalTestSuite = inputContent.GetAllFileContents();
 
-            var originalReqCover = finalTestSuite.SelectMany(x => x.ListReqCover.ToList()).ToList().Distinct().ToList();
-            var reducedReqCover = finalTestSuite.Where(x => x.TestCasesIncluded).SelectMany(x => x.ListReqCover.ToList()).ToList().Distinct().ToList();
+            var originalReqCover = finalTestSuite.SelectMany(x => x.ListReqCover.ToList()).ToList().Distinct().Where(y => !String.IsNullOrEmpty(y.Trim())).ToList();
+            var reducedReqCover = finalTestSuite.Where(x => x.TestCasesIncluded).SelectMany(x => x.ListReqCover.ToList()).ToList().Distinct().Where(y => !String.IsNullOrEmpty(y.Trim())).ToList();
             var afterRemoveWithSameDistanceReqCover = finalTestSuite
                 .Where(x => testCasesAfterRemovedWithSameDistance.Exists(y => y.TestClassName == x.TestClassName && y.TestMethodName == x.TestMethodName))
-                .SelectMany(z => z.ListReqCover.ToList()).ToList().Distinct().ToList();
+                .SelectMany(z => z.ListReqCover.ToList()).ToList().Distinct().Where(y => !String.IsNullOrEmpty(y.Trim())).ToList();
 
-            var logFilePath = $"{DIR_PATH_OUTPUT}LogClustering.csv";
+            var logFilePath = $"{DIR_PATH_OUTPUT}LogReduction.csv";
             CommonActions.WriteLogReduction(logFilePath, projectName, clusteringAlgorithmName, REDUCTION_ALGORITHM, numClusters,
                 finalTestSuite.Count, originalReqCover.Count,
                 testCasesAfterRemovedWithSameDistance.Count,

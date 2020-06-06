@@ -17,11 +17,6 @@ namespace AuxProject.TestReduction
         [DataRow(8)]
         [DataRow(9)]
         [DataRow(10)]
-        [DataRow(11)]
-        [DataRow(12)]
-        [DataRow(13)]
-        [DataRow(14)]
-        [DataRow(15)]
         public void RunOnKMedoidsClusterOnJavaTestProject(int numClusters)
         {
             RunReductionFromInput(ConstAux.PROJECT_NAME_JAVA_TEST, ConstAux.ALGORITHM_NAME_KMEDOIDS, numClusters);
@@ -37,11 +32,6 @@ namespace AuxProject.TestReduction
         [DataRow(8)]
         [DataRow(9)]
         [DataRow(10)]
-        [DataRow(11)]
-        [DataRow(12)]
-        [DataRow(13)]
-        [DataRow(14)]
-        [DataRow(15)]
         public void RunOnKMedoidsClusterOnFirebaseProject(int numClusters)
         {
             RunReductionFromInput(ConstAux.PROJECT_NAME_FIREBASE, ConstAux.ALGORITHM_NAME_KMEDOIDS, numClusters);
@@ -57,11 +47,6 @@ namespace AuxProject.TestReduction
         [DataRow(8)]
         [DataRow(9)]
         [DataRow(10)]
-        [DataRow(11)]
-        [DataRow(12)]
-        [DataRow(13)]
-        [DataRow(14)]
-        [DataRow(15)]
         public void RunOnKMedoidsClusterOnApacheProject(int numClusters)
         {
             RunReductionFromInput(ConstAux.PROJECT_NAME_APACHE, ConstAux.ALGORITHM_NAME_KMEDOIDS, numClusters);
@@ -77,11 +62,6 @@ namespace AuxProject.TestReduction
         [DataRow(8)]
         [DataRow(9)]
         [DataRow(10)]
-        [DataRow(11)]
-        [DataRow(12)]
-        [DataRow(13)]
-        [DataRow(14)]
-        [DataRow(15)]
         public void RunOnKMeansClusterOnJavaTestProject(int numClusters)
         {   
             RunReductionFromInput(ConstAux.PROJECT_NAME_JAVA_TEST, ConstAux.ALGORITHM_NAME_KMEANS, numClusters);
@@ -97,11 +77,6 @@ namespace AuxProject.TestReduction
         [DataRow(8)]
         [DataRow(9)]
         [DataRow(10)]
-        [DataRow(11)]
-        [DataRow(12)]
-        [DataRow(13)]
-        [DataRow(14)]
-        [DataRow(15)]
         public void RunOnKMeansClusterOnFirebaseProject(int numClusters)
         {
             RunReductionFromInput(ConstAux.PROJECT_NAME_FIREBASE, ConstAux.ALGORITHM_NAME_KMEANS, numClusters);
@@ -117,11 +92,6 @@ namespace AuxProject.TestReduction
         [DataRow(8)]
         [DataRow(9)]
         [DataRow(10)]
-        [DataRow(11)]
-        [DataRow(12)]
-        [DataRow(13)]
-        [DataRow(14)]
-        [DataRow(15)]
         public void RunOnKMeansClusterOnApacheProject(int numClusters)
         {
             RunReductionFromInput(ConstAux.PROJECT_NAME_APACHE, ConstAux.ALGORITHM_NAME_KMEANS, numClusters);
